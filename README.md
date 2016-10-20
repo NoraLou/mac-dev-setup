@@ -329,11 +329,6 @@ Let's create a [command line shortcut](http://www.sublimetext.com/docs/3/osx_com
 
 ```
 cd ~
-mkdir bin
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
-
-
-cd ~
 ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 ```
 
@@ -520,6 +515,18 @@ Finally, you can install Numpy and Scipy with:
 The recommended way to install [Node.js](http://nodejs.org/) is to use [nvm](https://github.com/creationix/nvm) (Node Version Manager) which allows you to manage multiple versions of Node.js on the same machine.
 
 Install nvm by copy-pasting the [install script command](https://github.com/creationix/nvm#install-script) into your terminal.
+
+For OSX 10.11 replace the .bashrc file with a ~./profile file. 
+add the following commands to your ~./profile file
+```
+export NVM_DIR="/Users/norah/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+```
+then in your ~./bash-profile file add the following line :
+
+```
+source ~/.profile
+```
 
 Once that is done, open a new terminal and verify that it was installed correctly by running:
 
