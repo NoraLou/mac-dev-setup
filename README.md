@@ -331,6 +331,10 @@ Let's create a [command line shortcut](http://www.sublimetext.com/docs/3/osx_com
 cd ~
 mkdir bin
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+
+
+cd ~
+ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 ```
 
 Now I can open a file with `$ subl myfile.py` or start a new project in the current directory with `$ subl .`. Pretty cool.
